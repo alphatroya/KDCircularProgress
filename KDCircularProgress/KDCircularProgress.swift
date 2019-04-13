@@ -80,6 +80,7 @@ public class KDCircularProgress: UIView, CAAnimationDelegate {
         }
     }
     
+    @objc
     public var progress: Double = 0 {
         didSet {
             let clampedProgress = progress.clamped(toMinimum: 0, maximum: 1)
@@ -169,6 +170,7 @@ public class KDCircularProgress: UIView, CAAnimationDelegate {
         }
     }
     
+    @objc
     public var progressColors: [UIColor] {
         get {
             return progressLayer.colorsArray
